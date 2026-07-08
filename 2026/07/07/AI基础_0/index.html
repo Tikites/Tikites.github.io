@@ -1,0 +1,253 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>AI基础_0：前言 | Tikit</title><meta name="author" content="Tikit"><meta name="copyright" content="Tikit"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="前言初心该tag下是我于大一下学期学习课程人工智能基础系列知识的总结与反思。因为在教学期间处于某种原因，博主学习的并不很认真（bush），感觉若干知识掌握的并不很牢固。同时因为上学期间时间比较紧凑，没能仔细钻研某些课程成分和完成课程内容中存在的一些实践性的内容。回想起来感觉其实还有很多东西可以尝试的实践一下，比如说轻量化的微调、训练一些自己比较感兴趣的神经网络，或者重新实践一下手写神经网络等内容，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="AI基础_0：前言">
+<meta property="og:url" content="https://tikites.github.io/2026/07/07/AI%E5%9F%BA%E7%A1%80_0/index.html">
+<meta property="og:site_name" content="Tikit">
+<meta property="og:description" content="前言初心该tag下是我于大一下学期学习课程人工智能基础系列知识的总结与反思。因为在教学期间处于某种原因，博主学习的并不很认真（bush），感觉若干知识掌握的并不很牢固。同时因为上学期间时间比较紧凑，没能仔细钻研某些课程成分和完成课程内容中存在的一些实践性的内容。回想起来感觉其实还有很多东西可以尝试的实践一下，比如说轻量化的微调、训练一些自己比较感兴趣的神经网络，或者重新实践一下手写神经网络等内容，">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://tikites.github.io/img/butterfly-icon.png">
+<meta property="article:published_time" content="2026-07-07T10:41:21.000Z">
+<meta property="article:modified_time" content="2026-07-08T07:42:35.959Z">
+<meta property="article:author" content="Tikit">
+<meta property="article:tag" content="AI基础">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://tikites.github.io/img/butterfly-icon.png"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "AI基础_0：前言",
+  "url": "https://tikites.github.io/2026/07/07/AI%E5%9F%BA%E7%A1%80_0/",
+  "image": "https://tikites.github.io/img/butterfly-icon.png",
+  "datePublished": "2026-07-07T10:41:21.000Z",
+  "dateModified": "2026-07-08T07:42:35.959Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Tikit",
+      "url": "https://Tikites.github.io"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://tikites.github.io/2026/07/07/AI%E5%9F%BA%E7%A1%80_0/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=5.5.5"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.13.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'AI基础_0：前言',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Tikit</span></a><a class="nav-page-title" href="/"><span class="site-name">AI基础_0：前言</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"></div></nav><div id="post-info"><h1 class="post-title">AI基础_0：前言</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2026-07-07T10:41:21.000Z" title="发表于 2026-07-07 18:41:21">2026-07-07</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2026-07-08T07:42:35.959Z" title="更新于 2026-07-08 15:42:35">2026-07-08</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AF%BE%E7%A8%8B/">课程</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AF%BE%E7%A8%8B/AI/">AI</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><h2 id="初心"><a href="#初心" class="headerlink" title="初心"></a>初心</h2><p>该tag下是我于大一下学期学习课程人工智能基础系列知识的总结与反思。因为在教学期间处于某种原因，博主学习的并不很认真（bush），感觉若干知识掌握的并不很牢固。同时因为上学期间时间比较紧凑，没能仔细钻研某些课程成分和完成课程内容中存在的一些实践性的内容。回想起来感觉其实还有很多东西可以尝试的实践一下，比如说轻量化的微调、训练一些自己比较感兴趣的神经网络，或者重新实践一下手写神经网络等内容，于是决定重新进行一些实验并作分析。这个假期还比较算空闲，觉得很适合重新整理这些内容。</p>
+<h2 id="纲要"><a href="#纲要" class="headerlink" title="纲要"></a>纲要</h2><p>博主计划在这个tag中重新探索一下人工智能的大体内容，具体包括下面几个部分：</p>
+<ol>
+<li>AI大致发展历程</li>
+<li>AI数学基础</li>
+<li>机器学习基础</li>
+<li>神经网络基础</li>
+<li>卷积神经网络</li>
+<li>递归神经网络S</li>
+<li>生图技术（对抗生成、扩散模型）</li>
+<li>搜索算法</li>
+<li>transformer</li>
+<li>LLM微调</li>
+<li>或一些当下技术的分析</li>
+</ol>
+<p>这些内容之外，将在每个小节中或多或少包含一些实践性的内容与代码，力求尽可能减少AI在这个学习过程中的应用。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://Tikites.github.io">Tikit</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://tikites.github.io/2026/07/07/AI%E5%9F%BA%E7%A1%80_0/">https://tikites.github.io/2026/07/07/AI%E5%9F%BA%E7%A1%80_0/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://Tikites.github.io" target="_blank">Tikit</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/AI%E5%9F%BA%E7%A1%80/">AI基础</a></div><div class="post-share"><div class="social-share" data-image="/img/butterfly-icon.png" data-sites="facebook,x,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/2026/07/07/AI%E5%9F%BA%E7%A1%80_1/" title="AI基础_1"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">AI基础_1</div></div><div class="info-2"><div class="info-item-1">AI的历史教案主要基于读物《人工智能简史》，阅读完此书后博主基于教案内容结构重新尝试梳理人工智能的发展历史 “人工智能” 起源此词第一次被提出是在1956年的达特茅斯会议。该会议被视为第一个探讨人工智能的会议，是为人工智能被纳入正式研究探讨的起源，旨在创立一个新学科。但是或许可以追溯的更早起源来自图灵所发表的“计算机与智能”一文，在此文中“人工智能”的称呼是“机器智能”。但是根据麦老（麦卡锡）回忆，此词也并非他首次提出，而是从别人那里听说的，具体是谁也无人知晓了 达特茅斯会议的重要参加者有以下几位：麦卡锡、明斯基、香农、塞弗里奇、纽厄尔和司马贺。其余也另有一些关键参与者，但还是以这六位为主吧，其余参与者暂且不谈。 六人关于人工智能的看法不尽相同，司马贺和纽厄尔走的是人工智能的符号派的路线，认为智能是对符号的操作，最原始的符号也就是物理客体。他们在会议中给出了第一个可以工作的AI程序“逻辑理论家”。麦卡锡也是符号派的一员，坚信形式化逻辑，认为知识表示和逻辑推理是AI的核心。香农比较特殊，在书中所阐释的其实香农和麦卡锡关系并不融洽，更像是来打酱油。他秉持的观念更加理论化，更多是为人工...</div></div></div></a><a class="pagination-related" href="/2026/07/07/pre-blog/" title="pre-blog"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">pre-blog</div></div><div class="info-2"><div class="info-item-1">前言第一次尝试写blog，也是受同学启发，因为同学将平常学习的内容记录下来发到知乎上之类，后再自己搞了一个基于GitHub的blog，我感觉也挺有意思，于是也尝试自己写一个blog吧，就从这个暑假开始，尝试整理一下过去学的知识，未来也好回过头来反思重新学习 end </div></div></div></a></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><a class="pagination-related" href="/2026/07/07/AI%E5%9F%BA%E7%A1%80_1/" title="AI基础_1"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-07-07</div><div class="info-item-2">AI基础_1</div></div><div class="info-2"><div class="info-item-1">AI的历史教案主要基于读物《人工智能简史》，阅读完此书后博主基于教案内容结构重新尝试梳理人工智能的发展历史 “人工智能” 起源此词第一次被提出是在1956年的达特茅斯会议。该会议被视为第一个探讨人工智能的会议，是为人工智能被纳入正式研究探讨的起源，旨在创立一个新学科。但是或许可以追溯的更早起源来自图灵所发表的“计算机与智能”一文，在此文中“人工智能”的称呼是“机器智能”。但是根据麦老（麦卡锡）回忆，此词也并非他首次提出，而是从别人那里听说的，具体是谁也无人知晓了 达特茅斯会议的重要参加者有以下几位：麦卡锡、明斯基、香农、塞弗里奇、纽厄尔和司马贺。其余也另有一些关键参与者，但还是以这六位为主吧，其余参与者暂且不谈。 六人关于人工智能的看法不尽相同，司马贺和纽厄尔走的是人工智能的符号派的路线，认为智能是对符号的操作，最原始的符号也就是物理客体。他们在会议中给出了第一个可以工作的AI程序“逻辑理论家”。麦卡锡也是符号派的一员，坚信形式化逻辑，认为知识表示和逻辑推理是AI的核心。香农比较特殊，在书中所阐释的其实香农和麦卡锡关系并不融洽，更像是来打酱油。他秉持的观念更加理论化，更多是为人工...</div></div></div></a></div></div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="giscus-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/butterfly-icon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Tikit</div><div class="author-info-description">AI / Machine Learning / LLM </div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">4</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/Tikites" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9D%E5%BF%83"><span class="toc-number">1.1.</span> <span class="toc-text">初心</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BA%B2%E8%A6%81"><span class="toc-number">1.2.</span> <span class="toc-text">纲要</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/07/07/AI%E5%9F%BA%E7%A1%80_1/" title="AI基础_1">AI基础_1</a><time datetime="2026-07-07T12:20:25.000Z" title="发表于 2026-07-07 20:20:25">2026-07-07</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/07/07/AI%E5%9F%BA%E7%A1%80_0/" title="AI基础_0：前言">AI基础_0：前言</a><time datetime="2026-07-07T10:41:21.000Z" title="发表于 2026-07-07 18:41:21">2026-07-07</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/07/07/pre-blog/" title="pre-blog">pre-blog</a><time datetime="2026-07-07T07:15:15.000Z" title="发表于 2026-07-07 15:15:15">2026-07-07</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/07/07/hello-world/" title="Hello World">Hello World</a><time datetime="2026-07-07T07:05:01.487Z" title="发表于 2026-07-07 15:05:01">2026-07-07</time></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 - 2026 By Tikit</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 7.3.0</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.5</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="前往评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.5"></script><script src="/js/main.js?v=5.5.5"></script><div class="js-pjax"><script>(() => {
+  const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo'
+  const option = null
+
+  const getGiscusTheme = theme => theme === 'dark' ? 'dark' : 'light'
+
+  const createScriptElement = config => {
+    const ele = document.createElement('script')
+    Object.entries(config).forEach(([key, value]) => {
+      ele.setAttribute(key, value)
+    })
+    return ele
+  }
+
+  const loadGiscus = (el = document, key) => {
+    const mappingConfig = isShuoshuo
+      ? { 'data-mapping': 'specific', 'data-term': key }
+      : { 'data-mapping': (option && option['data-mapping']) || 'pathname' }
+
+    const giscusConfig = {
+      src: 'https://giscus.app/client.js',
+      'data-repo': 'Tikites/Tikites.github.io',
+      'data-repo-id': 'R_kgDOTQCrvw',
+      'data-category-id': 'DIC_kwDOTQCrv84DAwY8',
+      'data-theme': getGiscusTheme(document.documentElement.getAttribute('data-theme')),
+      'data-reactions-enabled': '1',
+      crossorigin: 'anonymous',
+      async: true,
+      ...option,
+      ...mappingConfig
+    }
+
+    const scriptElement = createScriptElement(giscusConfig)
+
+    el.querySelector('#giscus-wrap').appendChild(scriptElement)
+
+    if (isShuoshuo) {
+      window.shuoshuoComment.destroyGiscus = () => {
+        if (el.children.length) {
+          el.innerHTML = ''
+          el.classList.add('no-comment')
+        }
+      }
+    }
+  }
+
+  const changeGiscusTheme = theme => {
+    const iframe = document.querySelector('#giscus-wrap iframe')
+    if (iframe) {
+      const message = {
+        giscus: {
+          setConfig: {
+            theme: getGiscusTheme(theme)
+          }
+        }
+      }
+      iframe.contentWindow.postMessage(message, 'https://giscus.app')
+    }
+  }
+
+  btf.addGlobalFn('themeChange', changeGiscusTheme, 'giscus')
+
+  if (isShuoshuo) {
+    'Giscus' === 'Giscus'
+      ? window.shuoshuoComment = { loadComment: loadGiscus }
+      : window.loadOtherComment = loadGiscus
+    return
+  }
+
+  if ('Giscus' === 'Giscus' || !false) {
+    if (false) btf.loadComment(document.getElementById('giscus-wrap'), loadGiscus)
+    else loadGiscus()
+  } else {
+    window.loadOtherComment = loadGiscus
+  }
+})()</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

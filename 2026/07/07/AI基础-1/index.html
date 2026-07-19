@@ -1,0 +1,433 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>AI基础_1 | Tikit</title><meta name="author" content="Tikit"><meta name="copyright" content="Tikit"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="AI的历史 教案主要基于读物《人工智能简史》，阅读完此书后博主基于教案内容结构重新尝试梳理人工智能的发展历史  “人工智能” 起源 此词第一次被提出是在1956年的达特茅斯会议。该会议被视为第一个探讨人工智能的会议，是为人工智能被纳入正式研究探讨的起源，旨在创立一个新学科。但是或许可以追溯的更早起源来自图灵所发表的“计算机与智能”一文，在此文中“人工智能”的称呼是“机器智能”。但是根据麦老（麦卡">
+<meta property="og:type" content="article">
+<meta property="og:title" content="AI基础_1">
+<meta property="og:url" content="https://tikites.github.io/2026/07/07/AI%E5%9F%BA%E7%A1%80-1/index.html">
+<meta property="og:site_name" content="Tikit">
+<meta property="og:description" content="AI的历史 教案主要基于读物《人工智能简史》，阅读完此书后博主基于教案内容结构重新尝试梳理人工智能的发展历史  “人工智能” 起源 此词第一次被提出是在1956年的达特茅斯会议。该会议被视为第一个探讨人工智能的会议，是为人工智能被纳入正式研究探讨的起源，旨在创立一个新学科。但是或许可以追溯的更早起源来自图灵所发表的“计算机与智能”一文，在此文中“人工智能”的称呼是“机器智能”。但是根据麦老（麦卡">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://tikites.github.io/img/butterfly-icon.png">
+<meta property="article:published_time" content="2026-07-07T12:20:25.000Z">
+<meta property="article:modified_time" content="2026-07-19T09:46:06.206Z">
+<meta property="article:author" content="Tikit">
+<meta property="article:tag" content="AI基础">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://tikites.github.io/img/butterfly-icon.png"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "AI基础_1",
+  "url": "https://tikites.github.io/2026/07/07/AI%E5%9F%BA%E7%A1%80-1/",
+  "image": "https://tikites.github.io/img/butterfly-icon.png",
+  "datePublished": "2026-07-07T12:20:25.000Z",
+  "dateModified": "2026-07-19T09:46:06.206Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Tikit",
+      "url": "https://Tikites.github.io"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://tikites.github.io/2026/07/07/AI%E5%9F%BA%E7%A1%80-1/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=5.5.5"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.13.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'AI基础_1',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Tikit</span></a><a class="nav-page-title" href="/"><span class="site-name">AI基础_1</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"></div></nav><div id="post-info"><h1 class="post-title">AI基础_1</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2026-07-07T12:20:25.000Z" title="发表于 2026-07-07 20:20:25">2026-07-07</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2026-07-19T09:46:06.206Z" title="更新于 2026-07-19 17:46:06">2026-07-19</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AF%BE%E7%A8%8B/">课程</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AF%BE%E7%A8%8B/AI/">AI</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><h1 id="ai的历史"><a class="markdownIt-Anchor" href="#ai的历史"></a> AI的历史</h1>
+<p>教案主要基于读物《人工智能简史》，阅读完此书后博主基于教案内容结构重新尝试梳理人工智能的发展历史</p>
+<h2 id="人工智能-起源"><a class="markdownIt-Anchor" href="#人工智能-起源"></a> “人工智能” 起源</h2>
+<p>此词第一次被提出是在1956年的达特茅斯会议。该会议被视为第一个探讨人工智能的会议，是为人工智能被纳入正式研究探讨的起源，旨在创立一个新学科。但是或许可以追溯的更早起源来自图灵所发表的“计算机与智能”一文，在此文中“人工智能”的称呼是“机器智能”。但是根据麦老（麦卡锡）回忆，此词也并非他首次提出，而是从别人那里听说的，具体是谁也无人知晓了</p>
+<p>达特茅斯会议的重要参加者有以下几位：麦卡锡、明斯基、香农、塞弗里奇、纽厄尔和司马贺。其余也另有一些关键参与者，但还是以这六位为主吧，其余参与者暂且不谈。</p>
+<p>六人关于人工智能的看法不尽相同，司马贺和纽厄尔走的是人工智能的<strong>符号派</strong>的路线，认为<strong>智能是对符号的操作，最原始的符号也就是物理客体</strong>。他们在会议中给出了第一个可以工作的AI程序“逻辑理论家”。麦卡锡也是符号派的一员，坚信形式化逻辑，认为<strong>知识表示和逻辑推理是AI的核心</strong>。香农比较特殊，在书中所阐释的其实香农和麦卡锡关系并不融洽，更像是来打酱油。他秉持的观念更加理论化，更多是为人工智能的实现提出理论支持，如最底层的数学和信息论框架。另一派是<strong>连接派</strong>，认为<strong>智能是从大量简单单元的链接中涌现出来，而非来自预先设定的符号规则</strong>，包含明斯基和塞弗里奇，但是后续明斯基的立场也发生了转变，逐渐偏向于符号派。从当下的AI发展成果来看，最后主流得到AI实现方式是连接派，或许因为物理客体的表示其实并非容易，用数字符号直接表达逻辑也不是一个好的选择。一个或许还算贴切的例子我想是独热编码和词袋模型，前者像一个比较典型的直接符号表达，他尝试用一个等同于所选取词语数量长度的向量，在不同位置取1，其他位置取0来区分不同词语。缺陷很明显，一方面任何词语并无法通过向量表达展示含义联系，另一方面当词语数量上升，这个表达会相当消耗空间，后续应用于计算也很复杂。后者也是用向量去表示词语。这个模型中尝试通过神经网络学习将选取的词语通过一定长度的向量来表示，每个维度的值可以表达这些词语在不同表意方向的符合程度，譬如某种表达可能是：</p>
+<blockquote>
+<p>开心 [ 0.9 ,…… ]<br />
+难过 [ -0.8,…… ]</p>
+</blockquote>
+<p>第一个维度表达这个词语的情绪积极程度。但实际上人类不太可能理解词袋模型学习后的这个向量表达每个维度到底是什么意思，只能通过模型内在的神经网络来理解这个符号表示，这也一定程度否认了直接实现符号派的可能性。这个过程也并非通过符号的途径直接尝试表达词语这种客体，而是通过模型的学习来模拟表示，是通过连接实现的。这么看来或许可以认为连接派是途径，符号派是目的或结果，日后关于AI的研究也许可以真正实现将AI内在逻辑与表达可理解化，不再是一个黑箱模型</p>
+<h2 id="第一阶段-符号主义以及连接主义的萌芽"><a class="markdownIt-Anchor" href="#第一阶段-符号主义以及连接主义的萌芽"></a> 第一阶段 ：符号主义以及连接主义的萌芽</h2>
+<h3 id="符号主义-自动定理证明"><a class="markdownIt-Anchor" href="#符号主义-自动定理证明"></a> 符号主义: 自动定理证明</h3>
+<p><strong>定理证明</strong>领域是人工智能符号派的思想源头和理论基础，在其基础上，人工智能研究者开始探讨定理是否能交给程序自动完成。<strong>自动定理证明</strong>也正是是人工智能最开始的应用领域，这个领域试图<strong>通过形式化猜想和命题，让程序搜索证明空间来验证命题或定理是否为真，以及证明是否存在</strong>。在达特茅斯会议中由司马贺、纽厄尔所提出的“逻辑理论家”是世界第一个用于定理证明的机器，可以用于证明怀特海和罗素《数学原理》第一卷中命题逻辑部分的一个很大的子集。在实现这个程序的过程中，采用了一个影响深远的程序思想， <strong>启发式</strong>程序。该思想在现代搜索领域也常见。所谓启发式，也就是<strong>不让程序漫无目的的，全面的探索某一个领域的所有状态，而是用某种方式告诉程序它下一步该向哪个方向探索比较好</strong>。这个思想实际上收到不少定理证明学者的反对。顺着纽厄尔的AI历史总结，定理证明学者可以分为两派，“纯的”以及“不纯的”，区别在于在该类学者于机器定理证明的过程中，是否引入了“过程知识”，即是否用别的知识引导AI探索优先方向，也就是早期的启发式思想。“纯的”定理证明学家认为就应该让AI“智能”地自由探索证明空间，只用告诉程序问题本身，程序就可以根据有限的几条公理定理推演得到正确证明过程。但实际上对于一阶以上定理的证明空间会愈加庞大，全面搜索极度消耗算力，所以，“纯的”定理证明学者在美国的日子并不好过。</p>
+<p>自动定理证明领域的发展并非只是相关技术推进的过程，更多是定理推导理论方面的进展，一步步简化了自动定理证明的过程。推动自动定理证明包含两方面，一方面是定理的形式化，也就是探究如何使得定理用形式化的语言简洁地表达，同时能完整地表达各种运算符号和逻辑关系，以及推理方式，另外一方面是简化证明过程，探究是否能存在一些形式化的定理可以避免多个已知公理定理反复应用联系，而可以直接得到一些结论。</p>
+<h4 id="命题形式化进展"><a class="markdownIt-Anchor" href="#命题形式化进展"></a> 命题形式化进展</h4>
+<h5 id="背景"><a class="markdownIt-Anchor" href="#背景"></a> 背景</h5>
+<p>从形式化方面来探究，追根到底最初的应该是来自亚里士多德的三段论，这个论断给出了逻辑证明经典的一种推理方式，即：</p>
+<blockquote>
+<p>大前提：  一个一般性的原则或命题<br />
+小前提：    一个特定的实例或者命题，通常被包含于大前提的范畴内<br />
+结 论：  从前提和小前提推导出的结果</p>
+</blockquote>
+<p>这是未来形式化证明的基本逻辑组分。然后是德国逻辑学家弗雷格以及皮亚诺和罗素、希尔伯特等人先后努力下，成功为数学创造了一套标准的数学量词系统，使得数学定理的描述可以规范化，基于此才有的进一步定理证明的形式化，用更加严密的计算机语言来表达命题本身。</p>
+<h5 id="逻辑理论家"><a class="markdownIt-Anchor" href="#逻辑理论家"></a> 逻辑理论家</h5>
+<p>纽厄尔和司马贺的“逻辑理论家”采用的形式化方法是命题逻辑，这里并没有表示“所有”、“存在”等量词，它是以命题直接作为变量，以及逻辑连接词构成，通过命题的相互包含等关系来推导新的定理，包含三个基本推理规则：</p>
+<blockquote>
+<p>代入规则：允许将公式中所有出现的某个变量，统一替换为一个任意复杂的命题表达式。<br />
+分离规则：即肯定前件式。如果 A → B 和 A 都是定理，那么可以推导出新定理 B。<br />
+置换规则：允许用一个逻辑上等价的表达式，替换公式的一部分。例如，A → B 可以置换为 ¬A ∨ B。</p>
+</blockquote>
+<p>不存在原创性的逻辑，全部基于《数学原理》的五条初始公理，所以能推导的新命题也相对有限。</p>
+<h5 id="自然演绎"><a class="markdownIt-Anchor" href="#自然演绎"></a> 自然演绎</h5>
+<p>进一步，普拉格维茨实现了<strong>自然演绎</strong>的方法，引入的关键规则是引入规则和消去规则：</p>
+<blockquote>
+<p>引入规则：你如何引入一个逻辑连接词？例如，要证明“如果下雨，那么地湿”，你会说：“假设下雨，然后我推导出地湿，所以证明了蕴含关系。”这个“假设…推导出…”的动作，就是“蕴含引入”规则。<br />
+消去规则：你如何使用一个已知的包含逻辑连接词的信息？例如，如果你已知“如果下雨，那么地湿”（蕴含），并且知道了“下雨”（前提），你就能直接得出结论“地湿”。这个动作，就是“蕴含消去”（也就是著名的“肯定前件”推理）。</p>
+</blockquote>
+<p>这个规则是模仿人类证明理论的逻辑，引入已有知识并导出对应结论。和“逻辑理论家”一样，这些引入的规则都属于过程知识，也就对应“不纯的”定理证明学派</p>
+<h5 id="完全系统"><a class="markdownIt-Anchor" href="#完全系统"></a> 完全系统</h5>
+<p>而王浩实现的形式化方法则采用自己设计的另一套完整的推理规则集合，他称之为“完全系统”，比“逻辑理论家”进一步包含了量词系统，处理对象则囊括了所有的一阶逻辑公式以及命题逻辑定理。与上述两种方法不同，王浩实现的方法没有引入过程知识，在证明的过程中使用无启发式的穷举搜索，是全自动的纯逻辑枚举，最后也能在当时笨重的机器上迅速的证明一阶定理（其实也在于这些定理本身可枚举的证明空间较小）。在一阶定理的基础上，王浩进一步研究了定理证明的复杂性。后续研究结果可以说孕育了整个理论计算机科学。王浩的这一套定理证明程序后来成为了高级语言的基准程序。</p>
+<h4 id="命题证明理论进展"><a class="markdownIt-Anchor" href="#命题证明理论进展"></a> 命题证明理论进展</h4>
+<p>从证明原理方面来探究，也就是寻求统一高效的定理证明的实现方法。</p>
+<p>在1957年夏季，一个逻辑学家的大聚会在康奈尔大学举行，会上数学家亚伯拉罕·罗宾逊指出<strong>埃尔布朗定理</strong>可以把一阶逻辑的问题转化为命题逻辑，这是证明方法的首次简化。后另外一个罗宾逊，英国人阿兰·罗宾逊在实现DP（戴维斯-普特南）过程的时候，发现了对后来定理证明有长远且深刻影响的归结（resolution）原理：</p>
+<h5 id="归结原理"><a class="markdownIt-Anchor" href="#归结原理"></a> 归结原理</h5>
+<p>归结原理核心逻辑是反证法，通过推导原命题的否命题存在逻辑矛盾，从而证明原命题是正确的。<br />
+核心方式是将一个原本包含存在量词、蕴含逻辑的命题通过消去、否定内移等步骤一步步简化为仅存在连接词和单个不含量词的子句集，在这个简化后的子句集来找出矛盾从而证明原命题：</p>
+<ol>
+<li>消去蕴含：把 A → B 全部替换为 ¬A ∨ B。</li>
+<li>否定内移：把否定符号 ¬ 向内推，直到它只作用于单个谓词，如 ¬(A ∧ B) 变成 (¬A ∨ ¬B)。</li>
+<li>存在量词实例化：这是处理“存在”最棘手的一步，通过引入Skolem函数来代表那个“存在的x”，彻底消去存在量词。</li>
+<li>全称量词省略：剩下的全称量词全部省略，因为默认所有变量都是“对任意”的。</li>
+<li>分配律展开：最终将公式展开成标准的“与或”形式，也就是一连串用“且”连接的子句。<br />
+至此，所有复杂的数学命题，都被“编译”成了一堆由“或”和文字组成的最底层构件</li>
+</ol>
+<p>在归结原理的发现过程中，罗宾逊同时创造了合一算法：<strong>给定两个含有变量的逻辑表达式，找到一个变量替换方案，让它们在替换后变得完全一样</strong>，这是归结原理处理一阶逻辑中变量和量词的关键。包含算法也是该时期罗宾逊做出的伟大贡献之一，用于<strong>判断一个表达式是否为另一个表达式的特例</strong>，在定理证明时可以用来删除冗余的子式，极大的限制了搜索空间的膨胀。二者结合在一起辅助归结原理在定理证明时的应用，构成一套完备的定理证明系统</p>
+<h5 id="项重写"><a class="markdownIt-Anchor" href="#项重写"></a> 项重写</h5>
+<p>这个原理用于证明一个公式可以变换一些运算方式或者逻辑变成完全等价的另外一个公式，证明了方程逻辑是完全的。</p>
+<p>可以注意到，在归结原理中，其中并没有内置相等的概念，无法通过等价概念实现子式的简化。在归结原理的基础上，融入了项重写原理，沃斯等人提出了superposition原理，可以实现<strong>将一个项叠加到另一个项之上，进行重写</strong>。</p>
+<p>它规定了几个约束：</p>
+<ol>
+<li>有序性：所有项、文字和子句，都必须按照一个给定的、良基的排序被安排大小（例如，c 可能被认为比 a+b “更小”或“更简单”）。</li>
+<li>方向性：叠加只能从一个“较大”的项，重写到一个“较小”的项。在上面的例子中，我们用 a+b 推导出 c，可能正是遵守了 a+b &gt; c 的这个方向。反过来的叠加则被禁止。</li>
+<li>冗余删除：它极致地运用包含算法。任何新生成的子句，如果被现有子句逻辑包含，立刻被删除。</li>
+</ol>
+<p>这套严密的秩序，使得 Superposition 成为一种完备且高效的算法，成为现代定理证明器的理论和实践基础。</p>
+<h3 id="连接主义-感知机"><a class="markdownIt-Anchor" href="#连接主义-感知机"></a> 连接主义: 感知机</h3>
+<h4 id="连接派的认识"><a class="markdownIt-Anchor" href="#连接派的认识"></a> 连接派的认识</h4>
+<p>与符号派关于<strong>智能来自对符号的操作</strong>不同, 连接派的思想启发于神经科学中关于人脑的认识:</p>
+<blockquote>
+<p>人脑为什么能够产生智能？或许并不是因为大脑内部存在明确规则，而是因为大量神经元之间的连接产生了复杂行为。</p>
+</blockquote>
+<p>1943年, Warren McCulloch 和 Walter Pitts 提出了人工神经元模型. 他们通过观察神经元的结构, 发现神经元具有多个信号输入端和一个信号输出端, 这代表神经元可以通过综合输入的信息来进行输出, 当多个输入信号超过阈值的时候, 神经元将被激活并产生输出, 可以抽象为数学模型:</p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>y</mi><mo>=</mo><mi>f</mi><mo stretchy="false">(</mo><munder><mo>∑</mo><mi>i</mi></munder><msub><mi>w</mi><mi>i</mi></msub><msub><mi>x</mi><mi>i</mi></msub><mo>−</mo><mi>θ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">y=f(\sum_i w_i x_i-\theta)
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.327674em;vertical-align:-1.277669em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.0500050000000003em;"><span style="top:-1.872331em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span><span style="top:-3.050005em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.277669em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.02691em;">w</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.02691em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">θ</span><span class="mclose">)</span></span></span></span></span></p>
+<p>其中：</p>
+<ul>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(x_i)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span>：输入信号</li>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><msub><mi>w</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(w_i)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.02691em;">w</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.02691em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span>：连接权重</li>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>θ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\theta)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.02778em;">θ</span><span class="mclose">)</span></span></span></span>：阈值</li>
+<li>y：输出</li>
+</ul>
+<p>第一次提出认识<strong>智能可能来自大量简单计算单元的组合，而不是复杂规则。</strong>, 这为连接主义的思想奠定了基础.</p>
+<h4 id="感知机"><a class="markdownIt-Anchor" href="#感知机"></a> 感知机</h4>
+<p>1957年,Frank Rosenblatt 提出了感知机（Perceptron）。这是第一个能够自动调整参数的人工神经网络模型。它的核心思想：**不是人工告诉机器什么特征重要, 而是通过训练数据, 不断调整权重, 最终找到输入和输出之间的映射关系。**感知机同符号主义最大的区别在于, 符号主义所设计的AI构造路径需要人为的定义其中的知识空间以及逻辑规则等, 依靠人工搭建起整个框架, 虽然也能表现出来一定程度的智能, 但极大的受限于人为操作这一属性. 而连接主义只是定义一个可变可学习的框架, 通过框架的数据学习来自动获得参数.</p>
+<p>其模型构造如下:</p>
+<h5 id="感知机的基本结构"><a class="markdownIt-Anchor" href="#感知机的基本结构"></a> 感知机的基本结构</h5>
+<p>感知机是一个二分类线性模型。</p>
+<p>给定输入：</p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi mathvariant="bold">x</mi><mo>=</mo><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo separator="true">,</mo><msub><mi>x</mi><mn>2</mn></msub><mo separator="true">,</mo><mo>⋯</mo><mtext> </mtext><mo separator="true">,</mo><msub><mi>x</mi><mi>n</mi></msub><msup><mo stretchy="false">)</mo><mi>T</mi></msup><mo>∈</mo><msup><mi mathvariant="double-struck">R</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">\mathbf{x}=(x_1,x_2,\cdots,x_n)^T\in \mathbb{R}^n
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.44444em;vertical-align:0em;"></span><span class="mord"><span class="mord mathbf">x</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.1413309999999999em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner">⋯</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8913309999999999em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.13889em;">T</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.7143919999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord"><span class="mord mathbb">R</span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7143919999999999em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span></span></span></span></span></span></span></span></span></p>
+<p>其中：</p>
+<ul>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">x_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>：输入特征</li>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal">n</span></span></span></span>：输入维度</li>
+</ul>
+<p>感知机为每个输入连接一个权重：</p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi mathvariant="bold">w</mi><mo>=</mo><mo stretchy="false">(</mo><msub><mi>w</mi><mn>1</mn></msub><mo separator="true">,</mo><msub><mi>w</mi><mn>2</mn></msub><mo separator="true">,</mo><mo>⋯</mo><mtext> </mtext><mo separator="true">,</mo><msub><mi>w</mi><mi>n</mi></msub><msup><mo stretchy="false">)</mo><mi>T</mi></msup></mrow><annotation encoding="application/x-tex">\mathbf{w}=(w_1,w_2,\cdots,w_n)^T
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.44444em;vertical-align:0em;"></span><span class="mord"><span class="mord mathbf" style="margin-right:0.01597em;">w</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.1413309999999999em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.02691em;">w</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.02691em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.02691em;">w</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.02691em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner">⋯</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.02691em;">w</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.02691em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8913309999999999em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.13889em;">T</span></span></span></span></span></span></span></span></span></span></span></span></p>
+<p>以及一个偏置：</p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">b
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathnormal">b</span></span></span></span></span></p>
+<p>首先计算输入的加权和：</p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>z</mi><mo>=</mo><msup><mi mathvariant="bold">w</mi><mi>T</mi></msup><mi mathvariant="bold">x</mi><mo>+</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">z=\mathbf{w}^{T}\mathbf{x}+b
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.04398em;">z</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.9746609999999999em;vertical-align:-0.08333em;"></span><span class="mord"><span class="mord"><span class="mord mathbf" style="margin-right:0.01597em;">w</span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8913309999999999em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.13889em;">T</span></span></span></span></span></span></span></span></span><span class="mord"><span class="mord mathbf">x</span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathnormal">b</span></span></span></span></span></p>
+<p>展开：</p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>z</mi><mo>=</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msub><mi>w</mi><mi>i</mi></msub><msub><mi>x</mi><mi>i</mi></msub><mo>+</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">z=\sum_{i=1}^{n}w_ix_i+b
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.04398em;">z</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.929066em;vertical-align:-1.277669em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.6513970000000002em;"><span style="top:-1.872331em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.050005em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span><span style="top:-4.3000050000000005em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">n</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.277669em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.02691em;">w</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.02691em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathnormal">b</span></span></span></span></span></p>
+<p>然后通过激活函数得到输出：</p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>y</mi><mo>=</mo><mi>f</mi><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">y=f(z)
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.04398em;">z</span><span class="mclose">)</span></span></span></span></span></p>
+<h5 id="阈值激活函数"><a class="markdownIt-Anchor" href="#阈值激活函数"></a> 阈值激活函数</h5>
+<p>Rosenblatt 原始感知机采用的是阶跃函数：</p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>f</mi><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo><mo>=</mo><mrow><mo fence="true">{</mo><mtable rowspacing="0.3599999999999999em" columnalign="left left" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mn>1</mn><mo separator="true">,</mo></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mi>z</mi><mo>&gt;</mo><mn>0</mn></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mn>0</mn><mo separator="true">,</mo></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mi>z</mi><mo>≤</mo><mn>0</mn></mrow></mstyle></mtd></mtr></mtable></mrow></mrow><annotation encoding="application/x-tex">f(z)=
+\begin{cases}
+1,&amp;z&gt;0\\
+0,&amp;z\leq0
+\end{cases}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.04398em;">z</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:3.0000299999999998em;vertical-align:-1.25003em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size4">{</span></span><span class="mord"><span class="mtable"><span class="col-align-l"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.69em;"><span style="top:-3.69em;"><span class="pstrut" style="height:3.008em;"></span><span class="mord"><span class="mord">1</span><span class="mpunct">,</span></span></span><span style="top:-2.25em;"><span class="pstrut" style="height:3.008em;"></span><span class="mord"><span class="mord">0</span><span class="mpunct">,</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.19em;"><span></span></span></span></span></span><span class="arraycolsep" style="width:1em;"></span><span class="col-align-l"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.69em;"><span style="top:-3.69em;"><span class="pstrut" style="height:3.008em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.04398em;">z</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&gt;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mord">0</span></span></span><span style="top:-2.25em;"><span class="pstrut" style="height:3.008em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.04398em;">z</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mord">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.19em;"><span></span></span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
+<p>因此完整模型：</p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><menclose notation="box"><mstyle scriptlevel="0" displaystyle="false"><mstyle scriptlevel="0" displaystyle="false"><mstyle scriptlevel="0" displaystyle="true"><mrow><mi>y</mi><mo>=</mo><mrow><mo fence="true">{</mo><mtable rowspacing="0.3599999999999999em" columnalign="left left" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mn>1</mn><mo separator="true">,</mo></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><msup><mi mathvariant="bold">w</mi><mi>T</mi></msup><mi mathvariant="bold">x</mi><mo>+</mo><mi>b</mi><mo>&gt;</mo><mn>0</mn></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mn>0</mn><mo separator="true">,</mo></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><msup><mi mathvariant="bold">w</mi><mi>T</mi></msup><mi mathvariant="bold">x</mi><mo>+</mo><mi>b</mi><mo>≤</mo><mn>0</mn></mrow></mstyle></mtd></mtr></mtable></mrow></mrow></mstyle></mstyle></mstyle></menclose></mrow><annotation encoding="application/x-tex">\boxed{
+y=
+\begin{cases}
+1,&amp;\mathbf{w}^{T}\mathbf{x}+b&gt;0\\
+0,&amp;\mathbf{w}^{T}\mathbf{x}+b\leq0
+\end{cases}
+}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:3.6800299999999995em;vertical-align:-1.5900299999999998em;"></span><span class="mord"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.09em;"><span style="top:-5.6800299999999995em;"><span class="pstrut" style="height:5.6800299999999995em;"></span><span class="boxpad"><span class="mord"><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size4">{</span></span><span class="mord"><span class="mtable"><span class="col-align-l"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.69em;"><span style="top:-3.69em;"><span class="pstrut" style="height:3.008em;"></span><span class="mord"><span class="mord">1</span><span class="mpunct">,</span></span></span><span style="top:-2.25em;"><span class="pstrut" style="height:3.008em;"></span><span class="mord"><span class="mord">0</span><span class="mpunct">,</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.19em;"><span></span></span></span></span></span><span class="arraycolsep" style="width:1em;"></span><span class="col-align-l"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.69em;"><span style="top:-3.69em;"><span class="pstrut" style="height:3.008em;"></span><span class="mord"><span class="mord"><span class="mord"><span class="mord mathbf" style="margin-right:0.01597em;">w</span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8413309999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.13889em;">T</span></span></span></span></span></span></span></span></span><span class="mord"><span class="mord mathbf">x</span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord mathnormal">b</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&gt;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mord">0</span></span></span><span style="top:-2.25em;"><span class="pstrut" style="height:3.008em;"></span><span class="mord"><span class="mord"><span class="mord"><span class="mord mathbf" style="margin-right:0.01597em;">w</span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8413309999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.13889em;">T</span></span></span></span></span></span></span></span></span><span class="mord"><span class="mord mathbf">x</span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord mathnormal">b</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mord">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.19em;"><span></span></span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span><span style="top:-4.09em;"><span class="pstrut" style="height:5.6800299999999995em;"></span><span class="stretchy fbox" style="height:3.6800299999999995em;border-style:solid;border-width:0.04em;"></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.5900299999999998em;"><span></span></span></span></span></span></span></span></span></span></p>
+<h5 id="应用场景"><a class="markdownIt-Anchor" href="#应用场景"></a> 应用场景</h5>
+<p>从感知机结构也不难看出, 感知机可以获得0或1两个结果, 也就是一般可以用于解决二分类问题. 事实上, 理想的感知机应用场景是一个可被分成两个区域的决策空间, 并且训练结果是一个超平面, 位于两类决策的中间. 通过自我训练, 似乎意味着AI似乎可以摆脱人工编程.</p>
+<h2 id="第一次人工智能寒冬"><a class="markdownIt-Anchor" href="#第一次人工智能寒冬"></a> 第一次人工智能寒冬:</h2>
+<p>1973年，莱特希尔发表了报告《《人工智能：一般性调查》，这份报告指出，当时人工智能研究距离此前提出的宏伟目标仍存在巨大差距，尤其是在机器人、自动化和通用智能方面表现有限，成为第一次人工智能寒冬的重要导火索之一。</p>
+<p>虽然莱特希尔是应用数学家和流体力学专家，并非AI研究的专业从事者，但是在这个报告中他详细的讨论了AI在自动化、机器人（具身智能）、智能应用等方面的成就，与之前人工智能研究者所抱有的期望相比较，基本上都没有成功。</p>
+<h3 id="理论瓶颈"><a class="markdownIt-Anchor" href="#理论瓶颈"></a> 理论瓶颈</h3>
+<h4 id="连接派表达能力限制"><a class="markdownIt-Anchor" href="#连接派表达能力限制"></a> 连接派：表达能力限制</h4>
+<p>如上文所提及的，连接派的代表模型单层感知机的原理是将问题数据重构成一个高维向量，问题空间则是一个高维空间。在这个空间中对于一个（超）平面可分的二元可分问题，通过多组训练数据，感知机可以逐渐拟合出来这个（超）平面，得以实现二分类问题的解决。但是存在例外，明斯基和帕珀特的《感知机》中提出，单层感知机无法解决异或问题，这很大程度限制了感知机的问题解决能力；另外，单层神经网络的感知机也存在表达能力不足的问题，对于非线性的问题常常无法解决，这导致连接派的神经网络陷入了某种死路，连接派的研究资金投入大幅减少</p>
+<img src="/2026/07/07/AI%E5%9F%BA%E7%A1%80-1/image.png" class="" title="单层感知机的表达能力限制">
+<h4 id="符号派知识表达与搜索空间"><a class="markdownIt-Anchor" href="#符号派知识表达与搜索空间"></a> 符号派：知识表达与搜索空间</h4>
+<p>符号派则存在知识表示的苦难。对于符号派的模型，解决问题重点在于如何在模型的空间中将所有需要的知识都表达出来。但这也是问题所在。</p>
+<p>对于一个简单的问题可能会牵涉到专业知识以及无数的常识知识，比方说简单的往前丢一块石头这个动作，就涉及到了诸如“引力会牵引石头下坠”、“石头本身具有速度”、“速度存在角度”、“存在一定的空气阻力”、“石头在飞行的过程中形状等性质不会改变”、“石头具有惯性”等一系列认知常识，小朋友也知道石头几乎会原封不动的经过一条曲线抛向远处，但是对于模型需要建立上述各种尝试之间的联系以及知识表达才能理解这个过程。这体现了人工智能中的一个核心困难：知识的隐含性。人类大量能力来源于长期进化和生活经验形成的常识，而这些知识往往无法被直接形式化描述。可见知识表达的需求是极其庞大的。</p>
+<p>伴随着知识规模扩大，符号系统中的状态空间呈指数增长，产生组合爆炸问题。如果想要解决通用问题，即使存在启发式函数指导搜索，在如此庞大的知识空间来构造问题解决也是非常困难的，这会消耗庞大的的算力和资源。不过这也正是符号派从通用人工智能退化向专家系统这种专攻某一领域问题的模型的契机</p>
+<h3 id="资源瓶颈"><a class="markdownIt-Anchor" href="#资源瓶颈"></a> 资源瓶颈</h3>
+<p>首先，此刻的运行模型的计算机性能很差，对于一个中等规模的专家系统就要搭载上千条规则，占用很多内存空间，复杂的推理以及搜索又要消耗大量的计算资源。当时计算机的中央处理器的处理能力严重有限，存储设备的空间有限，同时访问速度也很缓慢，大规模的知识库难以实现并且实时响应也更加不可能。解决问题往往需要漫长的等待才能获得结果，进一步限制了模型的工业化，通用人工智能近乎不可能实现。</p>
+<p>其次出于以上问题，人工智能领域迟迟没有拿得出手的研究结果，导致这方面的投资也越来越少，从今天看来，人工智能也是一个消耗资源庞大的一个领域，缺少各种计算资源支持是很难发展起来的，这让人工智能进一步研究陷入困境</p>
+<p>此外，当时缺少大规模数字数据集。现代深度学习依赖的数据规模在当时并不存在，使得需要大量样本训练的连接主义方法难以发挥优势。</p>
+<h3 id="方向转变"><a class="markdownIt-Anchor" href="#方向转变"></a> 方向转变</h3>
+<p>两种派系都有所低估了“智能”实现的复杂度，于是跌入了第一次低谷。不过顺着以上述问题来看，两个派系都知道自己存在的缺陷。符号派发现实现通用智能太过复杂，于是转向做单领域的专家系统，从单个领域实现的基础向更广领域推进，并有所成效。</p>
+<p>虽然连接主义研究进入低谷，但并未完全消失。研究者意识到单层感知机的问题来自结构限制，因此开始探索多层网络以及有效训练方法，为之后反向传播算法和深度学习复兴留下理论基础。</p>
+<h2 id="第二阶段-从专家系统到知识图谱"><a class="markdownIt-Anchor" href="#第二阶段-从专家系统到知识图谱"></a> 第二阶段 ：从专家系统到知识图谱</h2>
+<p>值得注意的是, 这一阶段人工智能仍然延续符号主义路线，核心思想是将现实世界中的实体、属性和关系显式编码为机器可处理的符号结构，并通过规则推理实现智能行为。</p>
+<h3 id="专家系统"><a class="markdownIt-Anchor" href="#专家系统"></a> 专家系统</h3>
+<p>专家系统是工作于某一特定领域上的人工智能系统, 可以通过模拟人类专家的行为来解决领域的某些问题. 最早的专家系统是费根鲍姆, 翟若适, 李德博格三人合作开发的DENDRAL, 该系统用于根据物质质谱仪测算的数据, 推测它的结构. 这个专家系统的原理是通过捕捉化学分析的知识,将其转化成对应的规则加入到专家系统中, 从而引导专家系统推测结论. DENRDRAL效果不错, 有时结果比学生的推测还要精确.</p>
+<p>DENDRAL工作于封闭有限的结果空间里，通过限定好的规则，精确的在可能的结果空间中进行分析，从而得到所有可能的符合条件和规则得结果. DENDRAL最初希望通过计算机辅助化学家分析实验数据，但其核心并非从数据中自动学习规则，而是将化学专家总结出的领域知识编码为规则，再利用搜索算法寻找满足条件的分子结构，给出的答案是确定性结论，并不存在&quot;模糊&quot;答案的说法. 这就存在一种缺陷: 当规则不完全，信息不完整的时候，穷举的范畴是很庞大的，并且若规则存在错误，那么就不可能获得合理的决策. 同时存在知识获取瓶颈，有些知识或规则是难以通过语言进行直接描述的，导致人工进行的规则编码难以健全</p>
+<p>后来MYCIN系统在布坎南的牵头下实现. 布坎南也是DENDRAL工作团队的一员, 他尝试在化学领域以外继续实现专家系统. MYCIN工作于医学领域,是一个针对细菌感染的诊断系统, 虽然处方准确率达不到专科医生的水平, 但是已经优于非本专业的医生. MYCIN同DENDRAL最大的区别在于, 它实现了<strong>不精准推理</strong>, 可以在不确定的条件下做出处理, 让专家系统从精准的实验领域逐渐走向了更加广泛的应用领域. 后来不确定推理成为专家系统要素的产生式规则.</p>
+<h3 id="知识表示"><a class="markdownIt-Anchor" href="#知识表示"></a> 知识表示</h3>
+<p>为了实现符号派通过具象现实实现AI功能的途径, 在专家系统以及自然语言理解的催生下诞生了知识表示.</p>
+<h4 id="逻辑"><a class="markdownIt-Anchor" href="#逻辑"></a> 逻辑</h4>
+<p>逻辑是最方便的一种知识表示语言, 结构参考古希腊的三段论逻辑:</p>
+<blockquote>
+<p>自然语言:人必有一死，苏格拉底是人，所以苏格拉底必死<br />
+大前提和小前提：(∀x ) Man(x ) ⊃ Mortal(x ) &amp; Man(Socrates)<br />
+结论：Mortal(Socrates)</p>
+</blockquote>
+<p>正常而言一阶逻辑是难以直接进行推理的，具有不可判定的特征. 而逻辑的知识表示尝试通过限制一阶逻辑的表达能力来找到一组可判定的一阶逻辑子集, 藉此推演出<strong>描述逻辑</strong>, 可以表达实体与类以及类之间的关系, 描述逻辑中的实体就是一阶逻辑中的常量</p>
+<h4 id="心理学与语言学"><a class="markdownIt-Anchor" href="#心理学与语言学"></a> 心理学与语言学</h4>
+<p>知识表示的另一个来源是心理学和语言学, 研究词语之间的上下位关系, 其实也是研究实体的上下位描述范式. 其实概念最方便的表示方式是树而非一阶逻辑. 根据词关系后续出现了WordNet, 不单是同义词词典,还定义了上下位关系, 成为了自然语言处理的基本工具</p>
+<h3 id="语义网"><a class="markdownIt-Anchor" href="#语义网"></a> 语义网</h3>
+<p>语义网尝试对词语在网上给出更加详细的标注, 给让机器也能理解并处理这些信息</p>
+<p>为了让机器理解信息，语义网建立了一套技术栈，从下到上层层搭建：</p>
+<blockquote>
+<ol>
+<li>基础层（统一标识）：使用URI/IRI和Unicode，给网上的每个事物（概念、实体）一个全球唯一的“身份证号”，解决“指代谁”的问题。</li>
+</ol>
+</blockquote>
+<ol start="2">
+<li>语法层（结构化数据）：使用XML，定义数据的结构和格式，让数据本身变得规整，能被程序读取。</li>
+<li>核心层（描述含义）：这是最关键的一层。使用RDF（资源描述框架），将信息描述成“主谓宾”形式的三元组，比如“（乔布斯，是，苹果公司创始人）”，以此构建关系网络。它的升级版RDF Schema (RDFS)和OWL（网络本体语言），则用来定义更复杂的词汇和逻辑关系，比如“苹果公司”是一家“公司”，而“公司”是一种“组织”，让机器能够进行简单的推理。</li>
+<li>查询层与上层：SPARQL是专门针对这种RDF数据的查询语言，可以像SQL查询数据库一样查询知识。而最顶层的逻辑、证明和信任层，则是为了实现更复杂的推理，确保信息的可靠性，这是语义网的终极愿景，目前仍在发展中。</li>
+</ol>
+<h3 id="知识图谱"><a class="markdownIt-Anchor" href="#知识图谱"></a> 知识图谱</h3>
+<p>2012年，谷歌推出了知识图谱（Knowledge Graph）, 知识图谱继承了语义网关于实体、关系和语义表示的思想，但为了满足互联网规模的信息组织和搜索需求，采用了更加工程化、开放化的数据构建方式。</p>
+<p>知识图谱可以看作是语义网理念的一个大规模、商业化实现。它同样利用RDF等语义网技术，通过自动化的信息抽取技术，从海量数据中构建出类似“（实体-关系-实体）”的图谱，并成功应用于搜索引擎，极大地提升了搜索的精准度和智能性。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://Tikites.github.io">Tikit</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://tikites.github.io/2026/07/07/AI%E5%9F%BA%E7%A1%80-1/">https://tikites.github.io/2026/07/07/AI%E5%9F%BA%E7%A1%80-1/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://Tikites.github.io" target="_blank">Tikit</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/AI%E5%9F%BA%E7%A1%80/">AI基础</a></div><div class="post-share"><div class="social-share" data-image="/img/butterfly-icon.png" data-sites="facebook,x,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related full-width" href="/2026/07/07/AI%E5%9F%BA%E7%A1%80_0/" title="AI基础_0：前言"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">AI基础_0：前言</div></div><div class="info-2"><div class="info-item-1"> 前言  初心 该tag下是我于大一下学期学习课程人工智能基础系列知识的总结与反思。因为在教学期间处于某种原因，博主学习的并不很认真（bush），感觉若干知识掌握的并不很牢固。同时因为上学期间时间比较紧凑，没能仔细钻研某些课程成分和完成课程内容中存在的一些实践性的内容。回想起来感觉其实还有很多东西可以尝试的实践一下，比如说轻量化的微调、训练一些自己比较感兴趣的神经网络，或者重新实践一下手写神经网络等内容，于是决定重新进行一些实验并作分析。这个假期还比较算空闲，觉得很适合重新整理这些内容。  纲要 博主计划在这个tag中重新探索一下人工智能的大体内容，具体包括下面几个部分：  AI大致发展历程 AI数学基础 机器学习基础 神经网络基础 卷积神经网络 递归神经网络S 生图技术（对抗生成、扩散模型） 搜索算法 transformer LLM微调 或一些当下技术的分析  这些内容之外，将在每个小节中或多或少包含一些实践性的内容与代码，力求尽可能减少AI在这个学习过程中的应用。 </div></div></div></a></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><a class="pagination-related" href="/2026/07/07/AI%E5%9F%BA%E7%A1%80_0/" title="AI基础_0：前言"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-07-07</div><div class="info-item-2">AI基础_0：前言</div></div><div class="info-2"><div class="info-item-1"> 前言  初心 该tag下是我于大一下学期学习课程人工智能基础系列知识的总结与反思。因为在教学期间处于某种原因，博主学习的并不很认真（bush），感觉若干知识掌握的并不很牢固。同时因为上学期间时间比较紧凑，没能仔细钻研某些课程成分和完成课程内容中存在的一些实践性的内容。回想起来感觉其实还有很多东西可以尝试的实践一下，比如说轻量化的微调、训练一些自己比较感兴趣的神经网络，或者重新实践一下手写神经网络等内容，于是决定重新进行一些实验并作分析。这个假期还比较算空闲，觉得很适合重新整理这些内容。  纲要 博主计划在这个tag中重新探索一下人工智能的大体内容，具体包括下面几个部分：  AI大致发展历程 AI数学基础 机器学习基础 神经网络基础 卷积神经网络 递归神经网络S 生图技术（对抗生成、扩散模型） 搜索算法 transformer LLM微调 或一些当下技术的分析  这些内容之外，将在每个小节中或多或少包含一些实践性的内容与代码，力求尽可能减少AI在这个学习过程中的应用。 </div></div></div></a></div></div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="giscus-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/butterfly-icon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Tikit</div><div class="author-info-description">AI / Machine Learning / LLM </div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">4</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/Tikites" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#ai%E7%9A%84%E5%8E%86%E5%8F%B2"><span class="toc-number">1.</span> <span class="toc-text"> AI的历史</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD-%E8%B5%B7%E6%BA%90"><span class="toc-number">1.1.</span> <span class="toc-text"> “人工智能” 起源</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5-%E7%AC%A6%E5%8F%B7%E4%B8%BB%E4%B9%89%E4%BB%A5%E5%8F%8A%E8%BF%9E%E6%8E%A5%E4%B8%BB%E4%B9%89%E7%9A%84%E8%90%8C%E8%8A%BD"><span class="toc-number">1.2.</span> <span class="toc-text"> 第一阶段 ：符号主义以及连接主义的萌芽</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%A6%E5%8F%B7%E4%B8%BB%E4%B9%89-%E8%87%AA%E5%8A%A8%E5%AE%9A%E7%90%86%E8%AF%81%E6%98%8E"><span class="toc-number">1.2.1.</span> <span class="toc-text"> 符号主义: 自动定理证明</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%91%BD%E9%A2%98%E5%BD%A2%E5%BC%8F%E5%8C%96%E8%BF%9B%E5%B1%95"><span class="toc-number">1.2.1.1.</span> <span class="toc-text"> 命题形式化进展</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%83%8C%E6%99%AF"><span class="toc-number">1.2.1.1.1.</span> <span class="toc-text"> 背景</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E9%80%BB%E8%BE%91%E7%90%86%E8%AE%BA%E5%AE%B6"><span class="toc-number">1.2.1.1.2.</span> <span class="toc-text"> 逻辑理论家</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%87%AA%E7%84%B6%E6%BC%94%E7%BB%8E"><span class="toc-number">1.2.1.1.3.</span> <span class="toc-text"> 自然演绎</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%AE%8C%E5%85%A8%E7%B3%BB%E7%BB%9F"><span class="toc-number">1.2.1.1.4.</span> <span class="toc-text"> 完全系统</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%91%BD%E9%A2%98%E8%AF%81%E6%98%8E%E7%90%86%E8%AE%BA%E8%BF%9B%E5%B1%95"><span class="toc-number">1.2.1.2.</span> <span class="toc-text"> 命题证明理论进展</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%BD%92%E7%BB%93%E5%8E%9F%E7%90%86"><span class="toc-number">1.2.1.2.1.</span> <span class="toc-text"> 归结原理</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E9%A1%B9%E9%87%8D%E5%86%99"><span class="toc-number">1.2.1.2.2.</span> <span class="toc-text"> 项重写</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%9E%E6%8E%A5%E4%B8%BB%E4%B9%89-%E6%84%9F%E7%9F%A5%E6%9C%BA"><span class="toc-number">1.2.2.</span> <span class="toc-text"> 连接主义: 感知机</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BF%9E%E6%8E%A5%E6%B4%BE%E7%9A%84%E8%AE%A4%E8%AF%86"><span class="toc-number">1.2.2.1.</span> <span class="toc-text"> 连接派的认识</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%84%9F%E7%9F%A5%E6%9C%BA"><span class="toc-number">1.2.2.2.</span> <span class="toc-text"> 感知机</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%84%9F%E7%9F%A5%E6%9C%BA%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%BB%93%E6%9E%84"><span class="toc-number">1.2.2.2.1.</span> <span class="toc-text"> 感知机的基本结构</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E9%98%88%E5%80%BC%E6%BF%80%E6%B4%BB%E5%87%BD%E6%95%B0"><span class="toc-number">1.2.2.2.2.</span> <span class="toc-text"> 阈值激活函数</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF"><span class="toc-number">1.2.2.2.3.</span> <span class="toc-text"> 应用场景</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%AF%92%E5%86%AC"><span class="toc-number">1.3.</span> <span class="toc-text"> 第一次人工智能寒冬:</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%90%86%E8%AE%BA%E7%93%B6%E9%A2%88"><span class="toc-number">1.3.1.</span> <span class="toc-text"> 理论瓶颈</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BF%9E%E6%8E%A5%E6%B4%BE%E8%A1%A8%E8%BE%BE%E8%83%BD%E5%8A%9B%E9%99%90%E5%88%B6"><span class="toc-number">1.3.1.1.</span> <span class="toc-text"> 连接派：表达能力限制</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AC%A6%E5%8F%B7%E6%B4%BE%E7%9F%A5%E8%AF%86%E8%A1%A8%E8%BE%BE%E4%B8%8E%E6%90%9C%E7%B4%A2%E7%A9%BA%E9%97%B4"><span class="toc-number">1.3.1.2.</span> <span class="toc-text"> 符号派：知识表达与搜索空间</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B5%84%E6%BA%90%E7%93%B6%E9%A2%88"><span class="toc-number">1.3.2.</span> <span class="toc-text"> 资源瓶颈</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B9%E5%90%91%E8%BD%AC%E5%8F%98"><span class="toc-number">1.3.3.</span> <span class="toc-text"> 方向转变</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E9%98%B6%E6%AE%B5-%E4%BB%8E%E4%B8%93%E5%AE%B6%E7%B3%BB%E7%BB%9F%E5%88%B0%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1"><span class="toc-number">1.4.</span> <span class="toc-text"> 第二阶段 ：从专家系统到知识图谱</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%93%E5%AE%B6%E7%B3%BB%E7%BB%9F"><span class="toc-number">1.4.1.</span> <span class="toc-text"> 专家系统</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9F%A5%E8%AF%86%E8%A1%A8%E7%A4%BA"><span class="toc-number">1.4.2.</span> <span class="toc-text"> 知识表示</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%80%BB%E8%BE%91"><span class="toc-number">1.4.2.1.</span> <span class="toc-text"> 逻辑</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%BF%83%E7%90%86%E5%AD%A6%E4%B8%8E%E8%AF%AD%E8%A8%80%E5%AD%A6"><span class="toc-number">1.4.2.2.</span> <span class="toc-text"> 心理学与语言学</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%AD%E4%B9%89%E7%BD%91"><span class="toc-number">1.4.3.</span> <span class="toc-text"> 语义网</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1"><span class="toc-number">1.4.4.</span> <span class="toc-text"> 知识图谱</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/07/07/AI%E5%9F%BA%E7%A1%80-1/" title="AI基础_1">AI基础_1</a><time datetime="2026-07-07T12:20:25.000Z" title="发表于 2026-07-07 20:20:25">2026-07-07</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/07/07/AI%E5%9F%BA%E7%A1%80_0/" title="AI基础_0：前言">AI基础_0：前言</a><time datetime="2026-07-07T10:41:21.000Z" title="发表于 2026-07-07 18:41:21">2026-07-07</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/07/07/pre-blog/" title="pre-blog">pre-blog</a><time datetime="2026-07-07T07:15:15.000Z" title="发表于 2026-07-07 15:15:15">2026-07-07</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/07/07/hello-world/" title="Hello World">Hello World</a><time datetime="2026-07-07T07:05:01.487Z" title="发表于 2026-07-07 15:05:01">2026-07-07</time></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 - 2026 By Tikit</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 7.3.0</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.5</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="前往评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.5"></script><script src="/js/main.js?v=5.5.5"></script><div class="js-pjax"><script>(async () => {
+  const showKatex = () => {
+    document.querySelectorAll('#article-container .katex').forEach(el => el.classList.add('katex-show'))
+  }
+
+  if (!window.katex_js_css) {
+    window.katex_js_css = true
+    await btf.getCSS('https://cdn.jsdelivr.net/npm/katex@0.17.0/dist/katex.min.css')
+    if (false) {
+      await btf.getScript('https://cdn.jsdelivr.net/npm/katex@0.17.0/dist/contrib/copy-tex.min.js')
+    }
+  }
+
+  showKatex()
+})()</script><script>(() => {
+  const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo'
+  const option = null
+
+  const getGiscusTheme = theme => theme === 'dark' ? 'dark' : 'light'
+
+  const createScriptElement = config => {
+    const ele = document.createElement('script')
+    Object.entries(config).forEach(([key, value]) => {
+      ele.setAttribute(key, value)
+    })
+    return ele
+  }
+
+  const loadGiscus = (el = document, key) => {
+    const mappingConfig = isShuoshuo
+      ? { 'data-mapping': 'specific', 'data-term': key }
+      : { 'data-mapping': (option && option['data-mapping']) || 'pathname' }
+
+    const giscusConfig = {
+      src: 'https://giscus.app/client.js',
+      'data-repo': 'Tikites/Tikites.github.io',
+      'data-repo-id': 'R_kgDOTQCrvw',
+      'data-category-id': 'DIC_kwDOTQCrv84DAwY8',
+      'data-theme': getGiscusTheme(document.documentElement.getAttribute('data-theme')),
+      'data-reactions-enabled': '1',
+      crossorigin: 'anonymous',
+      async: true,
+      ...option,
+      ...mappingConfig
+    }
+
+    const scriptElement = createScriptElement(giscusConfig)
+
+    el.querySelector('#giscus-wrap').appendChild(scriptElement)
+
+    if (isShuoshuo) {
+      window.shuoshuoComment.destroyGiscus = () => {
+        if (el.children.length) {
+          el.innerHTML = ''
+          el.classList.add('no-comment')
+        }
+      }
+    }
+  }
+
+  const changeGiscusTheme = theme => {
+    const iframe = document.querySelector('#giscus-wrap iframe')
+    if (iframe) {
+      const message = {
+        giscus: {
+          setConfig: {
+            theme: getGiscusTheme(theme)
+          }
+        }
+      }
+      iframe.contentWindow.postMessage(message, 'https://giscus.app')
+    }
+  }
+
+  btf.addGlobalFn('themeChange', changeGiscusTheme, 'giscus')
+
+  if (isShuoshuo) {
+    'Giscus' === 'Giscus'
+      ? window.shuoshuoComment = { loadComment: loadGiscus }
+      : window.loadOtherComment = loadGiscus
+    return
+  }
+
+  if ('Giscus' === 'Giscus' || !false) {
+    if (false) btf.loadComment(document.getElementById('giscus-wrap'), loadGiscus)
+    else loadGiscus()
+  } else {
+    window.loadOtherComment = loadGiscus
+  }
+})()</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
